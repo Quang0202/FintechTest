@@ -134,7 +134,7 @@ fun StockListScreen(viewModel: StockViewModel) {
                 color = Color.Gray,
                 fontWeight = FontWeight.Bold,
                 fontSize = 30.sp,
-                modifier = Modifier.padding(start = 16.dp)
+                modifier = Modifier.padding(start = 16.dp, bottom = 10.dp)
             )
         }
 

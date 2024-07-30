@@ -271,7 +271,7 @@ fun StockItem(stock: Stock) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(16.dp)
+            .padding(horizontal = 16.dp, vertical = 10.dp)
             .background(Color.Black)
     ) {
         Column {
@@ -285,7 +285,8 @@ fun StockItem(stock: Stock) {
                 stock.companyName,
                 style = MaterialTheme.typography.bodySmall,
                 color = Color.Gray,
-                overflow = TextOverflow.Ellipsis
+                overflow = TextOverflow.Ellipsis,
+                modifier = Modifier.padding(top = 5.dp)
             )
         }
         Spacer(modifier = Modifier.weight(1f))
